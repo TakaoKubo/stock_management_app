@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+やったね！！　大窪先生！！！
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
