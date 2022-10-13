@@ -39,6 +39,15 @@ Route::post('/books',function(Request $request){
             ->withInput()
             ->withErrors($validator);
     }
+
+    //Eloquentモデル（登録処理）
+    $books = new Book;
+    $books->item_name = $request->item_name;
+    $books->item_number = '1';
+    $boosk->item_amount = '1000';
+    $books->published = '2017-03-07 00:00:00';
+    $books->save();
+    return redirect('/');
 });
 
 //本を削除
