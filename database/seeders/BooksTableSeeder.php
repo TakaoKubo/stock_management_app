@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class BooksTableSeeder extends Seeder
 {
@@ -23,6 +22,8 @@ class BooksTableSeeder extends Seeder
             'published' => '2022-12-04',
         ];
         DB::table('books')->insert($param);
+
+        $param = [
         'item_name' => '花子の冒険',
         'item_number' => '100',
         'item_amount' =>  '1500',
