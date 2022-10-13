@@ -17,4 +17,4 @@ yarn-error.log
 *.sqlite
 .htaccess
 /storage
-/config
+config/database.php
