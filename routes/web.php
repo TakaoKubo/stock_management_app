@@ -16,8 +16,13 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
-    return view('books');
-});
+    $books = Book::orderBy('created_at','asc')->get();
+    return view('books',[
+        'books' => $books
+    ]);
+})
+// ->middleware('auth')
+;
 
 //本を追加
 Route::post('/books',function(Request $request){
@@ -38,7 +43,8 @@ Route::post('/books',function(Request $request){
 
 //本を削除
 Route::delete('/book/{book}',function(Book $book){
-    //
+    $book->delete();
+    return redirect('/');
 });
 
 Auth::routes();
