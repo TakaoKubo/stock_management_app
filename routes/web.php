@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Book;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+//本を追加
+Route::post('/books',function(Request $request){
+    //
+});
+
+//本を削除
+Route::delete('/book/{book}',function(Book $book){
+    //
 });
