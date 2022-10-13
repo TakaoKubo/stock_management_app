@@ -50,7 +50,7 @@ Route::post('/books',function(Request $request){
     return redirect('/');
 });
 
-//本を削除
+//本を削除・・・Route::deleteを使うためにbooks.blade.phpで@method('DELETE')という疑似フォームメソッドを使っている。
 Route::delete('/book/{book}',function(Book $book){
     $book->delete();
     return redirect('/');
