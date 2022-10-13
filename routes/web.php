@@ -17,7 +17,9 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('books');
-});
+})
+// ->middleware('auth')
+;
 
 //本を追加
 Route::post('/books',function(Request $request){
