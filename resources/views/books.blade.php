@@ -33,16 +33,8 @@
 
             
         </form>
-        
-        <!-- 本のデータ削除ボタン -->
-        <form action="{{ url('book/'.$book->id) }}" method="POST">
-        @csrf               <!-- CSRFからの保護 -->
-        @method('DELETE')   <!-- 擬似フォームメソッド -->
-        
-        <button type="submit" class="btn btn-danger">
-            削除
-        </button>
-     </form>
+
+
     </div>
     <!-- Book: 既に登録されてる本のリスト -->
     <!-- 現在の本-->
@@ -66,7 +58,15 @@
 
                         <!-- 本:削除ボタン-->
                         <td>
-
+                        <!-- 本のデータ削除ボタン -->
+                        <form action="{{ url('book/'.$book->id) }}" method="POST">
+                            @csrf               <!-- CSRFからの保護 -->
+                            @method('DELETE')   <!-- 擬似フォームメソッド -->
+                            
+                            <button type="submit" class="btn btn-danger">
+                                削除
+                            </button>
+                        </form>
                         </td>
                     </tr>
                 @endforeach
