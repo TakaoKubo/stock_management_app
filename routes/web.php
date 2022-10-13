@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 //本を追加
 Route::post('/books',function(Request $request){
-    dd($request);
+    //dd($request);
     
     //バリデーション
     $validator = Validator::make($request->all(),[
@@ -44,7 +44,7 @@ Route::post('/books',function(Request $request){
     $books = new Book;
     $books->item_name = $request->item_name;
     $books->item_number = '1';
-    $boosk->item_amount = '1000';
+    $books->item_amount = '1000';
     $books->published = '2017-03-07 00:00:00';
     $books->save();
     return redirect('/');
