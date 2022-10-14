@@ -16,7 +16,7 @@ class BooksController extends Controller
     }
 
 //更新画面
-public function edit(Book $book){
+public function edit(Book $books){
     return view('booksedit', [
         'book' => $books
     ]);
