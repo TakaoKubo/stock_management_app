@@ -82,12 +82,12 @@ Route::post('/books/update', function(Request $request){
             ->withErrors($validator);
     }
 
-    //Eloquentモデル（登録処理）
+    //Eloquentモデル（更新処理）
     $books = Book::find($request->id);
     $books->item_name = $request->item_name;
-    $books->item_number = '1';
-    $books->item_amount = '1000';
-    $books->published = '2017-03-07 00:00:00';
+    $books->item_number = $request->item_number;
+    $books->item_amount = $request->item_amount;
+    $books->published = $request->published;
     $books->save();
     return redirect('/');
 });
