@@ -37,10 +37,10 @@
             </div>
             <!-- file追加 -->
             <div class="col-sm-6">
-                <label>画像</label>
+                <label>画像</label><br>
                 <input type="file" name="item_img">
             </div>
-
+            <br>
             <!-- 本 登録ボタン -->
             <div class="form-row">
                 <div class="col-sm-offset-3 col-sm-6">
