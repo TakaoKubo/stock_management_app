@@ -57,6 +57,8 @@
                     <!-- テーブルヘッダ -->
                     <thead>
                         <th>本一覧</th>
+                        <th>価格</th>
+                        <th>数量</th>
                         <th>&nbsp;</th>
                     </thead>
                     <!-- テーブル本体 -->
@@ -66,6 +68,12 @@
                                 <!-- 本タイトル -->
                                 <td class="table-text">
                                     <div>{{ $book->item_name }}</div>
+                                </td>
+                                <td>
+                                    ￥{{ $book->item_amount }}
+                                </td>
+                                <td>
+                                    {{ $book->item_number }} 個
                                 </td>
 
                                 <!-- 本: 更新ボタン -->
