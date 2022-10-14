@@ -19,6 +19,7 @@ class BooksTableSeeder extends Seeder
             'item_name' => 'キングダメ！',
             'item_number' => '30000',
             'item_amount' => '645',
+            'item_img'=> '',
             'published' => '2022-12-04',
         ];
         DB::table('books')->insert($param);
@@ -27,6 +28,7 @@ class BooksTableSeeder extends Seeder
         'item_name' => '花子の冒険',
         'item_number' => '100',
         'item_amount' =>  '1500',
+        'item_img'=> '',
         'published' => '2022-10-13 12:00:00',
         ];
     DB::table('books')->insert($param);
@@ -35,6 +37,7 @@ class BooksTableSeeder extends Seeder
         'item_name' => '花子の冒険2',
         'item_number' => '100',
         'item_amount' =>  '3000',
+        'item_img'=> '',
         'published' => '2022-10-13 12:00:00',
         ];
     DB::table('books')->insert($param);
@@ -43,6 +46,7 @@ class BooksTableSeeder extends Seeder
         'item_name' => '花子の冒険3',
         'item_number' => '100',
         'item_amount' =>  '6000',
+        'item_img'=> '',
         'published' => '2022-10-13 12:00:00',
         ];
     DB::table('books')->insert($param);
@@ -51,6 +55,7 @@ class BooksTableSeeder extends Seeder
         'item_name' => '花子の冒険3',
         'item_number' => '100',
         'item_amount' =>  '12000',
+        'item_img'=> '',
         'published' => '2022-10-13 12:00:00',
         ];
     DB::table('books')->insert($param);
