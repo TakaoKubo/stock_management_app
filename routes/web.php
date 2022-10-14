@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Book;
 use Illuminate\Http\Request;
+use App\Http\Controllers\BooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,8 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    $books = Book::orderBy('created_at','asc')->get();
-    return view('books',[
-        'books' => $books
-    ]);
-})
+// 本ダッシュボード表示
+Route::get('/', [BooksController::class, 'index'])
 // ->middleware('auth')
 ;
 
