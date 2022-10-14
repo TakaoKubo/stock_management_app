@@ -84,11 +84,20 @@ public function destroy(Book $book){
              ->withErrors($validator);
      }
 
+     $file = $request->file('item_img'); //file取得
+     if(!empty($file)){                  //fileが空かチェック
+         $filename = $file->getClientOriginalName();
+         $move = $file->move('./upload/',$filename);
+     } else {
+         $filename = "";
+     }
+
      //Eloquentモデル（登録処理）
      $books = new Book;
      $books->item_name = $request->item_name;
      $books->item_number = $request->item_number;
      $books->item_amount =$request->item_amount;
+     $books->item_img = $filename;
      $books->published = $request->published;
      $books->save();
      return redirect('/');
