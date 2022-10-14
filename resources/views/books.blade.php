@@ -75,6 +75,9 @@
                                 <td>
                                     {{ $book->item_number }} 個
                                 </td>
+                                <td>
+                                    <div><img src="upload/{{$book->item_img}}" width="100" alt="画像がありません"></div>
+                                </td>
 
                                 <!-- 本: 更新ボタン -->
                                 <td>
