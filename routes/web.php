@@ -50,6 +50,11 @@ Route::post('/books',function(Request $request){
     return redirect('/');
 });
 
+Route::post('/booksedit/{books}',function(Book $books){
+    //{books}id値を取得 =>Books $books id値の1レコード取得
+    return view('booksedit',['book'=> $books]);
+});
+
 //本を削除・・・Route::deleteを使うためにbooks.blade.phpで@method('DELETE')という疑似フォームメソッドを使っている。
 Route::delete('/book/{book}',function(Book $book){
     $book->delete();
