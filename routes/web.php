@@ -69,6 +69,7 @@ Route::delete('/book/{book}',function(Book $book){
     return redirect('/');
 });
 
+/*
 Route::post('/books/update', function(Request $request){
     //バリデーション
     $validator = Validator::make($request->all(),[
@@ -96,6 +97,9 @@ Route::post('/books/update', function(Request $request){
     $books->save();
     return redirect('/');
 });
+*/
+
+Route::post('/books/update',[BooksController::class,'update']);
 
 Auth::routes();
 
