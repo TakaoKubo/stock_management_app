@@ -60,11 +60,12 @@ Route::post('/books',function(Request $request){
 
 Route::post('/booksedit/{books}', [BooksController::class, 'edit']);
 
-//本を削除・・・Route::deleteを使うためにbooks.blade.phpで@method('DELETE')という疑似フォームメソッドを使っている。
-Route::delete('/book/{book}',function(Book $book){
-    $book->delete();
-    return redirect('/');
-});
+// //本を削除・・・Route::deleteを使うためにbooks.blade.phpで@method('DELETE')という疑似フォームメソッドを使っている。
+// Route::delete('/book/{book}',function(Book $book){
+//     $book->delete();
+//     return redirect('/');
+// });
+Route::delete('/book/{book}', [BooksController::class, 'destroy']);
 
 /*
 Route::post('/books/update', function(Request $request){

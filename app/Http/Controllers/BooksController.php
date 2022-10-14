@@ -22,6 +22,12 @@ public function edit(Book $books){
     ]);
 }
 
+//削除処理
+public function destroy(Book $book){
+    $book->delete();
+    return redirect('/');
+}
+
  //更新
  public function update(request $request){
       //バリデーション
