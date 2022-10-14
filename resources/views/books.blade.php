@@ -11,7 +11,7 @@
         <!-- バリデーションエラーの表示に使用-->
 
         <!-- 本のタイトル -->
-        <form enctype="multupart/form-data" action="{{ url('books') }}" method="POST" class="form-horizontal">
+        <form enctype="multipart/form-data" action="{{ url('books') }}" method="POST" class="form-horizontal">
             @csrf
             <div class="form-row">
                 <div class="form-group col-md-6">

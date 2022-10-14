@@ -20,43 +20,44 @@ Route::get('/', [BooksController::class, 'index'])
 // ->middleware('auth')
 ;
 
-//本を追加
-Route::post('/books',function(Request $request){
-    //dd($request);
+Route::post('/books',[BooksController::class, 'store']);
+// //本を追加
+// Route::post('/books',function(Request $request){
+//     //dd($request);
     
-    //バリデーション
-    $validator = Validator::make($request->all(),[
-        'item_name'=>'required|min:3|max:255',
-        'item_number'=>'required|min:1|max:3',
-        'item_amount'=>'required|max:6',
-        'published'=>'required',
-    ]);
+//     //バリデーション
+//     $validator = Validator::make($request->all(),[
+//         'item_name'=>'required|min:3|max:255',
+//         'item_number'=>'required|min:1|max:3',
+//         'item_amount'=>'required|max:6',
+//         'published'=>'required',
+//     ]);
 
-    //バリデーションエラー
-    if($validator->fails()){
-        return redirect('/')
-            ->withInput()
-            ->withErrors($validator);
-    }
+//     //バリデーションエラー
+//     if($validator->fails()){
+//         return redirect('/')
+//             ->withInput()
+//             ->withErrors($validator);
+//     }
 
-    $file = $request->file('item_img'); //file取得
-    if(!empty($file)){                  //fileが空かチェック
-        $filename = $file->getClientOriginalName();
-        $move = $file->move('../upload/',$filename);
-    } else {
-        $filename = "";
-    }
+//     $file = $request->file('item_img'); //file取得
+//     if(!empty($file)){                  //fileが空かチェック
+//         $filename = $file->getClientOriginalName();
+//         $move = $file->move('../upload/',$filename);
+//     } else {
+//         $filename = "";
+//     }
 
-    //Eloquentモデル（登録処理）
-    $books = new Book;
-    $books->item_name = $request->item_name;
-    $books->item_number = $request->item_number;
-    $books->item_amount = $request->item_amount;
-    $books->item_img = $filename;
-    $books->published = $request->published;
-    $books->save();
-    return redirect('/');
-});
+//     //Eloquentモデル（登録処理）
+//     $books = new Book;
+//     $books->item_name = $request->item_name;
+//     $books->item_number = $request->item_number;
+//     $books->item_amount = $request->item_amount;
+//     $books->item_img = $filename;
+//     $books->published = $request->published;
+//     $books->save();
+//     return redirect('/');
+// });
 
 Route::post('/booksedit/{books}', [BooksController::class, 'edit']);
 
