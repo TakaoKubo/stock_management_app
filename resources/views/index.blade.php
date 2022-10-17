@@ -73,12 +73,12 @@ for your beautiful skin caring. </h3>
 <div class="list_row">
   <h3>本の一覧</h3>
   @if(count($books) > 0)
-  <table>
+  <ul>
 	@foreach($books as $book)
-	<tr>
+	<li>
 		<div>{{$book->item_name}}</div>
         <div><img src="upload/{{$book->item_img}}" width="100"></div>
-	</tr>
+</li>
 	@endforeach
 	@endif
   </table>
