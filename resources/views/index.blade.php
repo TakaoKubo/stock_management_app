@@ -71,7 +71,7 @@ for your beautiful skin caring. </h3>
 <!-- ▼▼商品列1ここから ▼▼ -->
 <a name="01"></a>
 <div class="list_row">
-  <h3>本一覧</h3>
+  <h3>本の一覧</h3>
   @if(count($books) > 0)
   <table>
 	@foreach($books as $book)
