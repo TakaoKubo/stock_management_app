@@ -9,7 +9,7 @@ use Validator;
 
 class BooksController extends Controller
 {
-    public function index(){
+    public function management(){
         $books = Book::orderBy('created_at', 'asc')->get();
         return view('books', [
             'books' => $books

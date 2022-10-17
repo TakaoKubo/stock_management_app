@@ -16,7 +16,7 @@ use App\Http\Controllers\BooksController;
 |
 */
 // 本ダッシュボード表示
-Route::get('/', [BooksController::class, 'index'])
+Route::get('/management', [BooksController::class, 'management'])
 // ->middleware('auth')
 ;
 
