@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@extends('layouts.auth')
+<!-- @extends('layouts.auth') -->
 @section('content')
     <!-- Bootstrapの定形コード… -->
     <div class="card-body">
