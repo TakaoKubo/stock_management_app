@@ -81,7 +81,6 @@ for your beautiful skin caring. </h3>
 </li>
 	@endforeach
 	@endif
-  </table>
 
   <div id="cont_right">
 <div class="title_grid">
