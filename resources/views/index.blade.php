@@ -1,10 +1,12 @@
 @extends('layouts.app')
 @section('content')
 <div id="wrapper">
+<a name="top"></a>
+
 <!-- ============ ヘッダー =============== -->
 <div id="header">
 <div id="head_logo">
-<a href="index.html"><img src="img/head_logo.gif" alt="head_logo" width="195" height="30" border="0" /></a><!-- ▼▼ロゴ画像▲▲　-->
+<a href="index.html"><img src="img/head_logo.gif" alt="head_logo" width="195" height="30" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
 <!-- ▼▼ロゴテキストここから▼▼　-->
 <h3>We deliver a useful item <br />
 for your beautiful skin caring. </h3>
@@ -61,47 +63,116 @@ for your beautiful skin caring. </h3>
   <p>優待15%OFFキャンペーンを開始！</p>
 </div>
 <!-- ▲▲newsテキストここまで▲▲　-->
-<!-- //end cont_left -->
-
-<!-- ▼▼バナーリンクパートここから▼▼　-->
-<!-- ▼▼バナーリンク列1ここから▼▼　-->
+  <!-- //end cont_left -->
 <div id="cont_right">
-<div class="product_row">
-  <div class="main_title">
-    <h2>無添加石鹸と自然素材タオルのセット</h2>
-    <h3>【今なら優待15%OFFキャンペーン!!】</h3>
-    <div class="clear_both"></div></div>
-  <a href="product.html#01">
-  <img src="img/img_01.jpg" alt="img_01" width="560" height="235" border="0" /></a>
-  <div class="main_link">
-  <a href="product.html#01">&gt;&gt;詳しくはこちら</a></div></div>
-<!-- ▲▲バナーリンク列1ここまで▲▲　-->
-<!-- ▼▼バナーリンク列2ここから▼▼　-->
-<div class="topics_row">
-  <div class="topics_left">
-  <h2>薬用スキンケアローション</h2>
-  <a href="product.html#02">
-  <img src="img/img_02.jpg" alt="img_02" width="270" height="135" border="0" /></a>
-<div class="main_link">
-<a href="product.html#02">&gt;&gt;詳しくはこちら</a></div></div>
-<!-- ▲▲バナーリンク列2ここまで▲▲　-->
-<!-- ▼▼バナーリンク列3ここから▼▼　-->
-<div class="topics_right">
-<h2>香りの灯火・花畑</h2>
-<a href="product.html#03">
-<img src="img/img_03.jpg" alt="img_03" width="270" height="135" border="0" /></a>
-<div class="main_link">
-<a href="product.html#03">&gt;&gt;詳しくはこちら</a></div>
+<div class="title_grid">
+  <h2>商品一覧</h2>
 </div>
-<div class="clear_both"></div></div>
+<!-- ▼▼商品列1ここから ▼▼ -->
+<a name="01"></a>
+<div class="list_row">
+  <h3>洗顔石鹸・タオル</h3>
+  <ul>
+<!-- ▼▼商品コマ1ここから ▼▼ -->
+    <li><div class=""><img src="img/img_07.jpg" alt="img_07" width="150" height="140" border="0" /></div>
+無添加石鹸と自然素材タオルのセット<br />
+価格　1,580円（税込）</li>
+<!-- ▲▲商品コマ1ここまで ▲▲ -->
+<!-- ▼▼商品コマ2ここから ▼▼ -->
+    <li><div class=""><img src="img/img_08.jpg" alt="img_08" width="150" height="140" border="0" /></div>
+自然素材のタオル・ボディブラシセット<br />
+価格　1,280円（税込）</li>
+<!-- ▲▲商品コマ2ここまで ▲▲ -->
+<!-- ▼▼商品コマ3ここから ▼▼ -->
+<li id="list_row_right"><div class=""><img src="img/img_09.jpg" alt="img_09" width="150" height="140" border="0" /></div>
+天然ハーブ石鹸6個セット<br />
+価格　980円（税込）</li>
+<!-- ▲▲商品コマ3ここまで ▲▲ -->
+      </ul>  <div class="clear_both"></div></div>
+<div class="page_top"><a href="#top">▲ページトップへ</a></div>
+<!-- ▲▲商品列1ここまで ▲▲ -->
+<!-- ▼▼商品列2ここから ▼▼ -->
+<a name="02"></a>
+<div class="list_row">
+  <h3>スキンケアローション</h3>
+  <ul>
+  <!-- ▼▼商品コマ1ここから ▼▼ -->
+    <li><div class=""><img src="img/img_10.jpg" alt="img_10" width="150" height="140" border="0" />
+    </div>薬用スキンケアローション（3本セット）<br />
+2,800円（税込）</li>
+<!-- ▲▲商品コマ1ここまで ▲▲ -->
+<!-- ▼▼商品コマ2ここから ▼▼ -->
+<li><div class=""><img src="img/img_11.jpg" alt="img_11" width="150" height="140" border="0" />
+</div>薬用ボディローション（2本セット）<br />
+1,980円（税込）</li>
+<!-- ▲▲商品コマ2ここまで ▲▲ -->
+      </ul><div class="clear_both"></div>
+</div>
+<div class="page_top"><a href="#top">▲ページトップへ</a></div>
+<!-- ▲▲商品列2ここまで ▲▲ -->
+<!-- ▼▼商品列3ここから ▼▼ -->
+<a name="03"></a>
+<div class="list_row">
+  <h3>アロマキャンドル</h3>
+  <ul>
+<!-- ▼▼商品コマ1ここから ▼▼ -->
+    <li><div class=""><img src="img/img_12.jpg" alt="img_12" width="150" height="140" border="0" />
+    </div>香りの灯火・花畑 <br />
+1,580円（税込）</li>
+<!-- ▲▲商品コマ1ここまで ▲▲ -->
+<!-- ▼▼商品コマ2ここから ▼▼ -->
+<li><div class=""><img src="img/img_13.jpg" alt="img_13" width="150" height="140" border="0" />
+    </div>香りの灯火・清涼 <br />
+1,580円（税込）</li>
+<!-- ▲▲商品コマ2ここまで ▲▲ -->
+<!-- ▼▼商品コマ3ここから ▼▼ -->
+<li id="list_row_right"><div class=""><img src="img/img_14.jpg" alt="img_14" width="150" height="140" border="0" />
+    </div>香りの灯火・薔薇 <br />
+1,580円（税込）</li>
+<!-- ▼▼商品コマ3ここまで ▼▼ -->
+      </ul>  <div class="clear_both"></div>
+</div>
+<div class="page_top"><a href="#top">▲ページトップへ</a></div>
+<!-- ▲▲商品列3ここまで ▲▲ -->
+<!-- ▼▼商品列4ここから ▼▼ -->
+<a name="04"></a>
+<div class="list_row">
+  <h3>手拭い</h3>
+  <ul>
+<!-- ▼▼商品コマ1ここから ▼▼ -->
+    <li><div class=""><img src="img/img_15.jpg" alt="img_15" width="150" height="140" border="0" />
+    </div>綿100％手拭い（10枚セット） <br />
+1,280円（税込）</li>
+<!-- ▲▲商品コマ1ここまで ▲▲ -->
+     </ul><div class="clear_both"></div>
+</div>
+<div class="page_top"><a href="#top">▲ページトップへ</a></div>
+<!-- ▲▲商品列4ここまで ▲▲ -->
+<!-- ▼▼商品列5ここから ▼▼ -->
+<a name="05"></a>
+<div class="list_row">
+  <h3>入浴剤</h3>
+  <ul>
+<!-- ▼▼商品コマ1ここから ▼▼ -->
+    <li><div class=""><img src="img/img_16.jpg" alt="img_09" width="150" height="140" border="0" />
+    </div>入浴剤と自然石鹸のセット（各4個） <br />
+1,580円（税込）</li>
+<!-- ▲▲商品コマ1ここまで ▲▲ -->
+<!-- ▼▼商品コマ2ここから ▼▼ -->
+<li><div class=""><img src="img/img_17.jpg" alt="img_17" width="150" height="140" border="0" />
+    </div>入浴剤5個セット <br />
+680円（税込）</li>
+<!-- ▼▼商品コマ2ここまで ▼▼ -->
+      </ul><div class="clear_both"></div>
+
+</div>
+<div class="page_top"><a href="#top">▲ページトップへ</a></div>
+<!-- ▲▲商品列5ここまで ▲▲ -->
 </div><!-- //end cont_right -->
-<!-- ▲▲バナーリンク列3ここまで▲▲　-->
-<!-- ▲▲バナーリンクパートここまで▲▲　-->  
   <div class="clear_both"></div>
+  
 </div><!-- //content -->
-
 <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
-
 </div><!-- //wrapper -->
 
 @endsection
