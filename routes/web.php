@@ -19,7 +19,7 @@ use App\Http\Controllers\BooksController;
 Route::get('/', [BooksController::class, 'index']);
 
 Route::get('/management', [BooksController::class, 'management'])
-// ->middleware('auth')
+//->middleware('auth')
 ;
 
 Route::post('/books',[BooksController::class, 'store']);
