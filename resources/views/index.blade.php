@@ -76,7 +76,7 @@ for your beautiful skin caring. </h3>
   <table>
 	@foreach($books as $book)
 	<tr>
-		<div>{{$books->item_name}}</div>
+		<div>{{$book->item_name}}</div>
 	</tr>
 	@endforeach
 	@endif
