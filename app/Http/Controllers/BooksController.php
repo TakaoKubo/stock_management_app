@@ -8,13 +8,19 @@ use App\Models\Book;
 use Validator;
 
 class BooksController extends Controller
-{
+{    
+    public function index(){
+        return view('index');
+    }
+
     public function management(){
         $books = Book::orderBy('created_at', 'asc')->get();
         return view('books', [
             'books' => $books
         ]);
     }
+
+
 
 //更新画面
 public function edit(Book $books){
