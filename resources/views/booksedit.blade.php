@@ -1,4 +1,4 @@
-@extends('Layouts.app')
+@extends('layouts.mng')
 
 @section('content')
 <div class="row container">

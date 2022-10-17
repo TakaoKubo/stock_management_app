@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.mng')
 <!-- @extends('layouts.auth') -->
 @section('content')
     <!-- Bootstrapの定形コード… -->
