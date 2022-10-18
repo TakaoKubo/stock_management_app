@@ -19,7 +19,7 @@
 <a name="top"></a>
 <div id="header">
   <div id="head_logo">
-    <a href="index.html"><img src="img/head_logo.gif" alt="head_logo" width="195" height="30" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
+    <a href="/"><img src="img/head_logo.gif" alt="head_logo" width="195" height="30" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
     <!-- ▼▼ロゴテキストここから▼▼　-->
     <h3>We deliver a useful item <br />
     for your beautiful skin caring. </h3>
@@ -34,7 +34,7 @@
 
     <!-- ▼▼メニュー項目ここから▼▼　-->
     <div id="menubar">
-      <a href="index.html">ホーム</a>
+      <a href="/">ホーム</a>
       <a href="product.html">商品案内</a>
       <a href="list.html">商品一覧</a>
       <a href="company.html">会社案内</a>
