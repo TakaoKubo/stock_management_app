@@ -21,32 +21,27 @@
 <div><a href="../upload/{{$item->item_img}}" data-lightbox="group"><img src="../upload/{{$item->item_img}}" width="100%" height="auto" ></a></div>
     <div class="company_info_text">
 <!-- ▼▼住所列ここから▼▼　-->
-      <h2>MAICOM STORE.</h2>
-      <dl><dt>address</dt>
-        <dd>〒100-0003<br />
-          東京都千代田区一ツ橋1-1-1</dd>
-        <dt>tel</dt>
-        <dd>03-0000-0000</dd>
-        <dt>fax</dt>
-        <dd>03-0000-0000</dd>
-        <dt>open</dt>
-        <dd>11:00 - 20:00</dd>
+      <h3>{{$item->item_name}}</h3>
+      <dl><dt>■著者</dt>
+        <dd>{{$item->writer}}<br />
+        <dt>■価格</dt>
+        <dd>{{$item->item_amount}}円<br />
           </dl></div></div>
 <!-- ▲▲住所列ここまで▲▲　-->
 
 <!-- ▼▼ 会社概要列ここから ▼▼ -->
 <div class="company_detail">
-  <h2>会社概要</h2>
-  <dl><dt>社名</dt>
-    <dd>株式会社マイコミストア</dd>
-    <dt>代表者</dt>
-    <dd>代表取締役　毎日一郎</dd>
-    <dt>設立</dt>
-    <dd>1998年5月5日</dd>
-    <dt>従業員数</dt>
-    <dd>13名</dd>
-    <dt>資本金</dt>
-    <dd>1,000万円</dd>
+  <h2>概要</h2>
+  <dl><dt>配信日</dt>
+    <dd>{{$item->published}}</dd>
+    <dt>ページ数</dt>
+    <dd>{{$item->page_number}}</dd>
+    <dt>掲載誌</dt>
+    <dd>南セントラル柏</dd>
+    <dt>ジャンル</dt>
+    <dd>サイエンス</dd>
+    <dt>あらすじ</dt>
+    <dd>{{$item->synopsis}}</dd>
 </dl></div>
 <!-- ▲▲ 会社概要列ここまで ▲▲ -->
 <!-- ▲▲ 会社概要カテゴリここまで ▲▲ -->
