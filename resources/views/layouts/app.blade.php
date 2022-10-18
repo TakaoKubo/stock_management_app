@@ -44,7 +44,7 @@
   </div>
 </div><!-- ============ ヘッダー =============== -->
 
-    @section('menu_left')
+    @section('cont_left')
     <!-- ▼▼ナビゲーションリンクパートここから▼▼　-->
 <div id="content">
   <div id="cont_left">
