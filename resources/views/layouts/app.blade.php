@@ -60,7 +60,7 @@
   <!-- ▼▼listページリンク列ここから▼▼　-->
   <h3>商品並び替え</h3>
   <ul>
-    <li><a href="list.html#01">商品名昇順</a></li>
+    <li><a href="?sort=item_name&order=asc">商品名昇順</a></li>
     <li><a href="list.html#02">商品名降順</a></li>
     <li><a href="list.html#03">在庫数昇順</a></li>
     <li><a href="list.html#04">在庫数降順</a></li>
