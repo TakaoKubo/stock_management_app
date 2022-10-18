@@ -4,7 +4,6 @@
     <!-- Bootstrapの定形コード… -->
     <div class="card-body">
         <div class="card-title">
-            本のタイトル
         </div>
 
         <!-- バリデーションエラーの表示に使用-->
