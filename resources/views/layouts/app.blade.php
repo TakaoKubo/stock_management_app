@@ -52,7 +52,7 @@
   <h2>RECOMMEND ITEM  & SORT</h2>
   <h3>今週の注目書籍</h3>
   <ul>
-    <li><a href="item/5">無添加石鹸と自然素材タオル</a></li>
+    <li><a href="{{url('item/5')}}">無添加石鹸と自然素材タオル</a></li>
     <li><a href="item/7">薬用スキンケアローション</a></li>
     <li><a href="item/9">香りの灯火シリーズ</a></li>
   </ul>
@@ -81,8 +81,9 @@
 
     @yield('content')
 
-    @yield('footer')
-
+    @section('footer')
+    <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
+    </div><!-- //wrapper -->
 
 </body>
 </html>
