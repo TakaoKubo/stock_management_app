@@ -47,7 +47,7 @@ public function edit(Book $books){
 //削除処理
 public function destroy(Book $book){
     $book->delete();
-    return redirect('/');
+    return redirect('/management');
 }
 
  //更新
@@ -69,7 +69,7 @@ public function destroy(Book $book){
 
     //バリデーションエラー
     if($validator->fails()){
-        return redirect('/')
+        return redirect('/management')
             ->withInput()
             ->withErrors($validator);
     }
@@ -117,7 +117,7 @@ public function destroy(Book $book){
 
      //バリデーションエラー
      if($validator->fails()){
-         return redirect('/')
+         return redirect('/management')
              ->withInput()
              ->withErrors($validator);
      }
