@@ -3,6 +3,9 @@
 @section('header')
 @endsection
 
+@section('cont_left')
+@endsection
+
 @section('content')
 
 <div id="cont_right">
@@ -28,17 +31,13 @@
   <div id="cont_right">
 
 
-
 <div class="page_top"><a href="#top">▲ページトップへ</a></div>
 <!-- ▲▲商品列5ここまで ▲▲ -->
 </div><!-- //end cont_right -->
   <div class="clear_both"></div>
   
-</div><!-- //content -->
-<div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
-</div><!-- //wrapper -->
-
-  @section('footer')
-  @endsection
-
 @endsection
+
+@section('footer')
+@endsection
+
