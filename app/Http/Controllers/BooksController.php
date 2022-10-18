@@ -14,6 +14,10 @@ class BooksController extends Controller
         return view('index',['books'=>$books]);
     }
 
+    public function item(){
+        return view('item');
+    }
+
     public function management(){
         $books = Book::orderBy('created_at', 'asc')->get();
         return view('books', [
