@@ -18,7 +18,7 @@
   <h2>{{$item->item_name}}</h2>
 </div>
 <div class="company_info">
-<div><a href="../upload/{{$item->item_img}}" data-lightbox="group"><img src="../upload/{{$item->item_img}}" width="235" height="240" ></a></div>
+<div><a href="../upload/{{$item->item_img}}" data-lightbox="group"><img src="../upload/{{$item->item_img}}" width="100%" height="auto" ></a></div>
     <div class="company_info_text">
 <!-- ▼▼住所列ここから▼▼　-->
       <h2>MAICOM STORE.</h2>
@@ -60,11 +60,11 @@
   
 </div><!-- //content -->
   
-</div><!-- //content -->
-<div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
-</div><!-- //wrapper -->
+
 
   @section('footer')
+  <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
+    </div><!-- //wrapper -->
   @endsection
 
 @endsection
