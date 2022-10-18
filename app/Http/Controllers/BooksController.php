@@ -9,9 +9,16 @@ use Validator;
 
 class BooksController extends Controller
 {    
-    public function index(){
-        $books = Book::orderBy('created_at', 'asc')->get();
-        return view('index',['books'=>$books]);
+    public function index(Request $request){
+        $sort = $request->sort;
+        $order = $request->order;
+        if ((isset($sort)) && (isset($order))) {
+            $books = Book::orderBy($sort, $order)->get();
+        }else{
+            $books = Book::orderBy('id', 'asc')->get();
+        }
+        $param = ['books'=>$books, 'sort' => $sort, 'order' => $order];
+        return view('index',$param);
     }
 
     public function item($id){
