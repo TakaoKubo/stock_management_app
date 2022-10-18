@@ -21,7 +21,7 @@
 	    @foreach($books as $book)
 	      <li><a href="/item/{{$book->id}}">
 		      <div class="ichiran">
-            <div><img class="thumbnail" src="upload/{{$book->item_img}}" width="100" height="70" style="object-fit: cover;"></div>
+            <div><img class="thumbnail" src="upload/{{$book->item_img}}" width="70" height="70" style="object-fit: cover;"></div>
             <div>{{$book->item_name}}</div>
             <div>￥{{$book->item_amount}}</div>
           </div>
