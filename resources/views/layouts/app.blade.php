@@ -44,6 +44,40 @@
   </div>
 </div><!-- ============ ヘッダー =============== -->
 
+    @section('menu_left')
+    <!-- ▼▼ナビゲーションリンクパートここから▼▼　-->
+<div id="content">
+  <div id="cont_left">
+  <!-- ▼▼Productページリンク列ここから▼▼　-->
+  <h2>PICK UP</h2>
+  <h3>今週の注目アイテム</h3>
+  <ul>
+    <li><a href="product.html#01">無添加石鹸と自然素材タオル</a></li>
+    <li><a href="product.html#02">薬用スキンケアローション</a></li>
+    <li><a href="product.html#03">香りの灯火シリーズ</a></li>
+  </ul>
+  <!-- ▲▲Productページリンク列ここから▲▲　-->
+  <!-- ▼▼listページリンク列ここから▼▼　-->
+  <h3>商品ジャンル</h3>
+  <ul>
+    <li><a href="list.html#01">洗顔石鹸・タオル</a></li>
+    <li><a href="list.html#02">スキンケアローション</a></li>
+    <li><a href="list.html#03">アロマキャンドル</a></li>
+    <li><a href="list.html#04">手拭い</a></li>
+    <li><a href="list.html#05">入浴剤</a></li>
+  </ul>
+  <!-- ▲▲listページリンク列ここまで▲▲　-->
+  <!-- ▲▲ナビゲーションリンクパートここまで▲▲　-->
+
+  <!-- ▼▼newsテキストここから▼▼　-->
+  <h2>NEWS</h2>
+  <h3>2009/5/15</h3>
+  <p>自然素材製品フェアに出展します。</p>
+  <h3>2009/5/10</h3>
+  <p>優待15%OFFキャンペーンを開始！</p>
+</div>
+<!-- ▲▲newsテキストここまで▲▲　-->
+
     @yield('content')
 
     @section('footer')
