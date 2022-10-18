@@ -11,7 +11,7 @@
 <!-- ▼▼ 会社概要カテゴリここから ▼▼ -->
 
 <div class="title_grid">
-  <h2>会社案内</h2>
+  <h2>{{$item->item_name}}</h2>
 </div>
 <div class="company_info">
 <div><img src="img/img_18.jpg" alt="img_18" width="235" height="240" /></div>

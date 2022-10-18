@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* CSS 毎日コミュニケーションズ */
+
+
+body {
+	background-color:#FFF;
+	color: #6c5a44;
+	font-family: Arial, Helvetica, sans-serif, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	}
+	
+p {
+	line-height: 1.5em;
+	padding: 5px 0;
+	margin: 0;
+	}
+	
+dl {
+	clear: both;
+	margin: 0;
+	padding: 5px 0;
+	}
+	
+dt {
+	float: left;
+	clear: both;
+	width: 10em;
+	}
+	
+dd {
+	margin-left:10em;
+	}
+	
+.dl_bottom {
+	border-bottom: 1px solid #FFF;
+	}
+	
+h1,h2,h3 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1em;
+	margin:0;
+	padding: 0;
+	}
+	
+a, a:link {
+	color:  #6c5a44;
+	text-decoration: none;
+	}
+	
+a:hover {
+	text-decoration: underline;
+	}
+	
+.clear_both {
+	clear: both;
+	font-size: 0px;
+	height: 0px;
+	}
+
+#wrapper {
+	background: url(../img/wrapper_bg.gif) repeat-y;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 800px;
+	}
+	
+#header {
+	background:url(../img/header_bg.gif) no-repeat;
+	border-bottom: 3px solid #6c5a44;
+	height: 160px;
+	text-align:left;
+	}
+	
+#content {
+	background:url(../img/content_bg.gif) repeat-x;
+	padding: 25px;
+	text-align: left;
+	}
+	
+#footer {
+	background: url(../img/foot_bg.gif) no-repeat;
+	font-size: 10px;
+	height: 15px;
+	padding: 8px;
+	text-align: left;
+	}
+	
+/* =============== TEXT ================= */
+
+.page_top {
+	margin-bottom: 15px;
+	text-align: right;
+	padding: 8px 0 5px;
+	}
+
+.title_grid h2 {
+	background:url(../img/border_checker.gif) repeat-x;
+	border-bottom: 1px solid #6c5a44;
+	font-size: 13px;
+	margin: 0 0 20px;
+	padding: 15px 0 10px;
+	}
+	
+/* =============== HEADER ================= */
+
+#head_logo {
+	float: left;
+	padding: 50px 0 0 45px;
+	width: 225px;
+	}
+	
+#header h1 {
+	font-size: 13px;
+	padding-left: 10px;
+	}
+
+#header h2 {
+	font-size: 11px;
+	font-weight: normal;
+	padding: 5px 0 0 10px;
+	}
+
+#header h3 {
+	font-size: 11px;
+	font-weight: normal;
+	padding: 20px 0 0;
+	}
+	
+#head_right {
+	float: left;
+	padding: 50px 0 0;
+	width: 530px;
+	}
+	
+/* =============== MENU BAR ================= */
+#menubar {
+	padding: 0;
+	margin: 10px 0 0;
+	}
+	
+#menubar a {
+	background: url(../img/menu_btn_bg.gif) no-repeat;
+	display: block;
+	float: left;
+	height: 21px;
+	line-height: 1em;
+	margin-left: 8px;
+	padding: 14px 0 0 15px;
+	width: 105px;
+	}
+	
+#menubar a:hover {
+	background-position: 0 -35px;
+	color: #FFF;
+	text-decoration: none;
+	}
+	
+/* =============== CONTENT LEFT ================= */
+
+#cont_left {
+	background: #f7f5e9;
+	float: left;
+	width: 175px;
+	}
+	
+#cont_left h2,h3 {
+	color: #523f31;
+	font-size: 13px;
+	}
+	
+#cont_left h2{
+	background: #ffde81;
+	border-top: 2px solid #6c5a44;
+	padding: 7px 9px;
+	}
+	
+#cont_left h3 {
+	background: none;
+	padding: 7px 9px;
+	}
+	
+#cont_left ul {
+	background:url(../img/navi_bg.gif);
+	font-size: 11px;
+	line-height: 1.2em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 10px;
+	}
+	
+#cont_left li {
+	padding: 3px 0 4px;
+	}
+	
+#cont_left p {
+	line-height: 1.3em;
+	padding: 2px 9px 10px;
+	}
+	
+/* =============== CONTENT RIGHT ================= */
+
+	
+#cont_right {
+	float: right;
+	width: 560px;
+	}
+	
+.main_title {
+	background: #6c5a44;
+	padding: 10px;
+	}
+
+.main_title h2 {
+	color: #FFF;
+	font-size: 13px;
+	float: left;
+	}
+	
+.main_title h3 {
+	color: #ffdd83;
+	float: right;
+	font-size: 11px;
+	font-weight: normal;
+	}
+	
+.main_link {
+	background: #6c5a44;
+	color: #FFF;
+	text-align: right;
+	padding: 6px 10px;
+	}
+	
+.main_link a{
+	color: #FFF;
+	text-decoration: none;
+	}
+	
+.main_link a:hover {
+	text-decoration: underline;
+	}
+	
+.topics_row {
+	padding: 15px 0;
+	}
+	
+.topics_row h2 {
+	background: #6c5a44;
+	color: #FFF;
+	font-size: 13px;
+	padding: 10px;
+	}
+	
+.topics_left {
+	float: left;
+	background: #6c5a44;
+	width: 270px;
+	}
+	
+.topics_right {
+	background: #6c5a44;
+	float: right;
+	width: 270px;
+	}
+	
+/* =============== PRODUCT ================= */
+
+.product_row {
+	background: #6c5a44;
+	margin: 0;
+	_height: 1%; /*IE6*/
+	}
+	
+*:first-child+html .product_row {
+	height: 1%; /*IE7*/
+	}
+	
+.product_detail {
+	color: #FFF;
+	background: #6c5a44;
+	padding: 20px;
+	}
+	
+.product_detail h2 {
+	color: #ffde81;
+	}
+	
+.product_detail h3 {
+	color: #FFF;
+	margin: 20px 0;
+	}
+	
+.product_detail dl {
+	border-top: 1px solid #FFF;
+	margin: 15px 0 0;
+	padding: 15px 0 0;
+	line-height: 1.6em;
+	}
+	
+.product_deatil dt {
+	width: 6em;
+	color: #FFF;
+	font-weight: bold;
+	clear: both;
+	}
+	
+.product_detail dd {
+	color: #FFF;
+	margin-left: 6em;
+	padding: 0;
+	}
+
+/* =============== LIST ================= */
+
+	
+.list_row {
+	border-bottom: 1px dotted #6c5a44;
+	padding: 5px 0 15px;
+	}
+	
+.list_row h3 {
+	padding: 0 0 20px;
+	}
+	
+.list_row ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+.list_row li {
+	display:block;
+	float: left;
+	line-height: 1.5em;
+	margin: 0 55px 25px 0;
+	width: 22%;
+	}
+
+.list_row img {
+	padding-bottom: 5px;
+	}
+
+#list_row_right {
+	float: right;
+	margin: 0;
+	}
+	
+/* =============== COMPANY ================= */
+
+.company_info {
+	margin-bottom: 15px; 
+	}
+	
+div.company_info  div{
+	display:table-cell;
+	vertical-align:bottom;
+	}
+
+* html div.company_info div{/* IE 6 */
+	display:inline;
+	zoom:1;
+	}
+
+*:first-child+html div.company_info div{/* IE 7 */
+	display:inline;
+	zoom:1;
+	}
+
+.company_info_text {
+	padding-left: 10px;
+	width: 310px;
+	}
+	
+* html .company_info_text {/* IE 6 */
+	padding-left: 10px;
+	width: 300px;
+	}
+
+.company_info dl {
+	border-bottom: 1px solid #FFF;
+	}
+	
+.company_info dt {
+	width: 5em;
+	} 
+	
+.company_info dd {
+	margin-left: 5em;
+	} 	
+
+.company_detail h2 {
+	background: #ffde81;
+	border-bottom: 1px solid #6c5a44;
+	font-size: 13px;
+	padding: 5px;
+	}
+
+.company_detail dl{
+	line-height: 2em;
+	}
+	
+.company_detail dt {
+	border-bottom: 1px dotted #6c5a44;
+	width: 5em;
+	}
+	
+.company_detail dd {
+	border-bottom: 1px dotted #6c5a44;
+	margin-left: 5em;
+	}
