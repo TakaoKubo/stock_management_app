@@ -80,8 +80,9 @@
 
     @yield('content')
 
-    @yield('footer')
-
+    @section('footer')
+    <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
+    </div><!-- //wrapper -->
 
 </body>
 </html>

@@ -21,7 +21,7 @@
 	    @foreach($books as $book)
 	      <li><a href="/item/{{$book->id}}">
 		      <div class="ichiran">
-            <div><img src="upload/{{$book->item_img}}" width="100"></div>
+            <div><img class="thumbnail" src="upload/{{$book->item_img}}" width="100" height="70" style="object-fit: cover;"></div>
             <div>{{$book->item_name}}</div>
             <div>価格 ￥{{$book->item_amount}}</div>
           </div>
@@ -41,7 +41,6 @@
 @endsection
 
 @section('footer')
-<div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
-    </div><!-- //wrapper -->
+
 @endsection
 
