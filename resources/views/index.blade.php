@@ -10,12 +10,12 @@
 
 <div id="cont_right">
   <div class="title_grid">
-    <h2>商品一覧</h2>
+    <h2>本の一覧</h2>
   </div>
   <!-- ▼▼商品列1ここから ▼▼ -->
   <a name="01"></a>
   <div class="list_row">
-    <h3>本の一覧</h3>
+    <!-- <h3>本の一覧</h3> -->
     @if(count($books) > 0)
       <ul>
 	    @foreach($books as $book)
