@@ -60,11 +60,11 @@
   
 </div><!-- //content -->
   
-</div><!-- //content -->
-<div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
-</div><!-- //wrapper -->
+
 
   @section('footer')
+  <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
+    </div><!-- //wrapper -->
   @endsection
 
 @endsection
