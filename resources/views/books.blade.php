@@ -16,7 +16,7 @@
             @csrf
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="book" class="col-sm-3 control-label">Book</label>
+                    <label for="book" class="col-sm-3 control-label">本の名前</label>
                     <input type="text" name="item_name" class="form-control">
                 </div>
 
@@ -27,7 +27,34 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="number" class="col-sm-3 control-label">数</label>
+                    <label for="writer" class="col-sm-3 control-label">著者</label>
+                    <input type="text" name="writer" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="page_number" class="col-sm-3 control-label">ページ数</label>
+                    <input type="text" name="page_number" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="publisher" class="col-sm-3 control-label">出版社</label>
+                    <input type="text" name="publisher" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="genre" class="col-sm-3 control-label">ジャンル</label>
+                    <input type="text" name="genre" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="synopsis" class="col-sm-3 control-label">あらすじ</label>
+                    <input type="text" name="synopsis" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="number" class="col-sm-3 control-label">在庫数</label>
                     <input type="text" name="item_number" class="form-control">
                 </div>
 
@@ -62,10 +89,16 @@
                 <table class="table table-striped task-table">
                     <!-- テーブルヘッダ -->
                     <thead>
-                        <th>本一覧</th>
-                        <th>価格</th>
-                        <th>数量</th>
-                        <th>&nbsp;</th>
+                    <th>本の名前</th>
+                    <th>金額</th>
+                    <th>著者</th>
+                    <th>ページ数</th>
+                    <th>出版社</th>
+                    <th>ジャンル</th>
+                    <th>あらすじ</th>
+                    <th>在庫数</th>
+                    <th>公開日</th>
+                    <th>&nbsp;</th>
                     </thead>
                     <!-- テーブル本体 -->
                     <tbody>
@@ -79,7 +112,25 @@
                                     ￥{{ $book->item_amount }}
                                 </td>
                                 <td>
-                                    {{ $book->item_number }} 個
+                                    {{ $book->writer }}
+                                </td>
+                                <td>
+                                    {{ $book->page_number }}
+                                </td>
+                                <td>
+                                    {{ $book->publisher }}
+                                </td>
+                                <td>
+                                    {{ $book->genre }}
+                                </td>
+                                <td>
+                                    {{ $book->synopsis }}
+                                </td>
+                                <td>
+                                    {{ $book->item_number }}個
+                                </td>
+                                <td>
+                                    {{ $book->published }} 
                                 </td>
                                 <td>
                                     <div><img src="upload/{{$book->item_img}}" width="100" alt="画像がありません"></div>

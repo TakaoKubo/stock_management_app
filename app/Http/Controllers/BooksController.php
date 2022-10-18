@@ -52,6 +52,11 @@ public function destroy(Book $book){
         'item_name' => 'required|min:3|max:255',
         'item_number' => 'required|min:1|max:3',
         'item_amount' => 'required|max:6',
+        'writer' => 'required|max:255',
+        'page_number' => 'required|max:255',
+        'publisher' => 'required|max:255',
+        'genre' => 'required|max:255',
+        'synopsis' => 'required|max:255',
         'published' => 'required',
     ]);
 
@@ -75,20 +80,32 @@ public function destroy(Book $book){
     $books->item_name = $request->item_name;
     $books->item_number = $request->item_number;
     $books->item_amount = $request->item_amount;
+    $books->writer = $request->writer;
+    $books->page_number = $request->page_number;
+    $books->publisher = $request->publisher;
+    $books->genre = $request->genre;
+    $books->synopsis = $request->synopsis;
     $books->item_img = $filename;
     $books->published = $request->published;
     $books->save();
-    return redirect('/');
+    return redirect('/management');
  }   
 
  public function store(Request $request)
  {
      //バリデーション
      $validator = Validator::make($request->all(),[
-         'item_name'=>'required|min:3|max:255',
-         'item_number'=>'required|min:1|max:3',
-         'item_amount'=>'required|max:6',
-         'published'=>'required',
+        'id' => 'required',
+        'item_name'=>'required|max:255',
+        'item_name' => 'required|min:3|max:255',
+        'item_number' => 'required|min:1|max:3',
+        'item_amount' => 'required|max:6',
+        'writer' => 'required|max:255',
+        'page_number' => 'required|max:255',
+        'publisher' => 'required|max:255',
+        'genre' => 'required|max:255',
+        'synopsis' => 'required|max:255',
+        'published' => 'required',
      ]);
 
      //バリデーションエラー
@@ -106,14 +123,19 @@ public function destroy(Book $book){
          $filename = "";
      }
 
-     //Eloquentモデル（登録処理）
-     $books = new Book;
+     //Eloquentモデル（更新処理）
+     $books = Book::find($request->id);
      $books->item_name = $request->item_name;
      $books->item_number = $request->item_number;
-     $books->item_amount =$request->item_amount;
+     $books->item_amount = $request->item_amount;
+     $books->writer = $request->writer;
+     $books->page_number = $request->page_number;
+     $books->publisher = $request->publisher;
+     $books->genre = $request->genre;
+     $books->synopsis = $request->synopsis;
      $books->item_img = $filename;
      $books->published = $request->published;
      $books->save();
-     return redirect('/');
+     return redirect('/management');
  }
 }
