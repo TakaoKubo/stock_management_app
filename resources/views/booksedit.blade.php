@@ -29,6 +29,46 @@
       value="{{$book->item_amount}}">
       </div>
       <!--/item_amount-->
+      
+      <!--writer-->
+      <div class="form-group">
+        <label for="writer">writer</label>
+      <input type="text"name="writer"class="form-control"
+      value="{{$book->writer}}">
+      </div>
+      <!--writer-->
+      
+      <!--page_number-->
+      <div class="form-group">
+        <label for="page_number">page_number</label>
+      <input type="text"name="page_number"class="form-control"
+      value="{{$book->page_number}}">
+      </div>
+      <!--page_number-->
+      
+      <!--publisher-->
+      <div class="form-group">
+        <label for="publisher">publisher</label>
+      <input type="text"name="publisher"class="form-control"
+      value="{{$book->publisher}}">
+      </div>
+      <!--publisher-->
+      
+      <!--genre-->
+      <div class="form-group">
+        <label for="genre">genre</label>
+      <input type="text"name="genre"class="form-control"
+      value="{{$book->genre}}">
+      </div>
+      <!--genre-->
+      
+      <!--synopsis-->
+      <div class="form-group">
+        <label for="synopsis">synopsis</label>
+      <input type="text"name="synopsis"class="form-control"
+      value="{{$book->synopsis}}">
+      </div>
+      <!--synopsis-->
 
       <!--published-->
       <div class="form-group">
