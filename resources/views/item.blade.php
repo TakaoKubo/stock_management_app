@@ -4,7 +4,11 @@
 @endsection
 
 @section('content')
-
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+</head>
 
 <div id="cont_right">
 
@@ -14,7 +18,7 @@
   <h2>{{$item->item_name}}</h2>
 </div>
 <div class="company_info">
-<div><img src="img/img_18.jpg" alt="img_18" width="235" height="240" /></div>
+<div><a href="../upload/{{$item->item_img}}" data-lightbox="group"><img src="../upload/{{$item->item_img}}" width="235" height="240" ></a></div>
     <div class="company_info_text">
 <!-- ▼▼住所列ここから▼▼　-->
       <h2>MAICOM STORE.</h2>
