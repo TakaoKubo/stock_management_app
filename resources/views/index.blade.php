@@ -20,8 +20,9 @@
       <ul>
 	    @foreach($books as $book)
 	      <li><a href="/item/{{$book->id}}">
-		      <div class="ichiran">{{$book->item_name}}
+		      <div class="ichiran">
             <div><img src="upload/{{$book->item_img}}" width="100"></div>
+            <div>{{$book->item_name}}</div>
             <div>価格 ￥{{$book->item_amount}}</div>
           </div>
         </a>
