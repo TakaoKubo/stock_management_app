@@ -18,7 +18,7 @@
   <h2>{{$item->item_name}}</h2>
 </div>
 <div class="company_info">
-<div><a href="../upload/{{$item->item_img}}" data-lightbox="group"><img src="../upload/{{$item->item_img}}" width="235" height="240" ></a></div>
+<div><a href="../upload/{{$item->item_img}}" data-lightbox="group"><img src="../upload/{{$item->item_img}}" width="100%" height="auto" ></a></div>
     <div class="company_info_text">
 <!-- ▼▼住所列ここから▼▼　-->
       <h2>MAICOM STORE.</h2>
