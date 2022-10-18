@@ -19,7 +19,7 @@
     @if(count($books) > 0)
       <ul>
 	    @foreach($books as $book)
-	      <li><a href="/item">
+	      <li><a href="/item/{{$book->id}}">
 		      <div class="ichiran">{{$book->item_name}}
             <div><img src="upload/{{$book->item_img}}" width="100"></div>
             <div>価格 ￥{{$book->item_amount}}</div>

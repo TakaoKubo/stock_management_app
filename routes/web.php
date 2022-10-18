@@ -22,7 +22,8 @@ Route::get('/management', [BooksController::class, 'management'])
 //->middleware('auth')
 ;
 
-Route::get('/item', [BooksController::class, 'item']);
+//Route::get('/item', [BooksController::class, 'item']);
+Route::get('/item/{id}',[BooksController::class, 'item']);
 
 Route::post('/books',[BooksController::class, 'store']);
 // //本を追加

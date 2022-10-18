@@ -14,8 +14,11 @@ class BooksController extends Controller
         return view('index',['books'=>$books]);
     }
 
-    public function item(){
-        return view('item');
+    public function item($id){
+        $item = Book::find($id);
+        return view('item', [
+            'item'=> $item
+        ]);
     }
 
     public function management(){
