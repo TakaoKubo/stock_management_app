@@ -37,9 +37,9 @@
     <dt>ページ数</dt>
     <dd>{{$item->page_number}}</dd>
     <dt>掲載誌</dt>
-    <dd>南セントラル柏</dd>
+    <dd>{{$item->publisher}}</dd>
     <dt>ジャンル</dt>
-    <dd>サイエンス</dd>
+    <dd>{{$item->genre}}</dd>
     <dt>あらすじ</dt>
     <dd>{{$item->synopsis}}</dd>
 </dl></div>
