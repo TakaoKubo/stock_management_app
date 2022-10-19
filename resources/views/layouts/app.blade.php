@@ -19,7 +19,7 @@
 <a name="top"></a>
 <div id="header">
   <div id="head_logo">
-    <a href="/"><img src="img/head_logo.png" alt="head_logo" width="195" height="60" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
+    <a href="/"><img src="{{asset('img/head_logo.png')}}" alt="head_logo" width="195" height="60" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
     <!-- ▼▼ロゴテキストここから▼▼　-->
     <h3>We deliver a beautiful book.</h3>
     <!-- ▲▲ロゴテキストここまで▲▲　-->

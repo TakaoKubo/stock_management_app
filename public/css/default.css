@@ -97,7 +97,7 @@ a:hover {
 	}
 
 .title_grid h2 {
-	background:url(../img/border_checker.gif) repeat-x;
+	background:url(../../img/border_checker.gif) repeat-x;
 	border-bottom: 1px solid #6c5a44;
 	font-size: 13px;
 	margin: 0 0 20px;
@@ -272,6 +272,7 @@ a:hover {
 	}
 
 .zaiko {
+	position: absolute;
 	color:white;
 	padding: 3px;
 	margin-bottom:-15px;
@@ -279,11 +280,11 @@ a:hover {
 	width:fit-content;
 	block-size:fit-content;
 	font-size:10px
-	-webkit-transform:scale(0.5) translate(-35px, -15px);
-	-moz-transform:scale(0.5) translate(-35px, -15px);
-	-ms-transform:scale(0.5) translate(-35px, -15px);
-	-o-transform:scale(0.5) translate(-35px, -15px);
-	transform:scale(0.5) translate(-35px, -15px);
+	-webkit-transform:scale(0.6) translate(-24px, -8px);
+	-moz-transform:scale(0.6) translate(-24px, -8px);
+	-ms-transform:scale(0.6) translate(-24px, -8px);
+	-o-transform:scale(0.6) translate(-24px, -8px);
+	transform:scale(0.6) translate(-24px, -8px);
 }
 	
 /* =============== PRODUCT ================= */
