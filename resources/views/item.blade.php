@@ -47,10 +47,7 @@
 <div class="page_top"><a href="#top">▲ページトップへ</a></div>
 
 
-</div><!-- //end cont_right -->
-  
   <div class="clear_both"></div>
-  
-</div><!-- //content -->
+
   
 @endsection
