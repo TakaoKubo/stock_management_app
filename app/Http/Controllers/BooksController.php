@@ -56,7 +56,6 @@ public function destroy(Book $book){
       $validator = Validator::make($request->all(),[
         'id' => 'required',
         'item_name'=>'required|max:255',
-        'item_name' => 'required|max:255',
         'item_number' => 'required|max:255',
         'item_amount' => 'required|max:255',
         'writer' => 'required|max:255',
@@ -130,7 +129,7 @@ public function destroy(Book $book){
          $filename = "";
      }
 
-     //Eloquentモデル（更新処理）
+     //Eloquentモデル（登録処理）
      $books = new Book;
      $books->item_name = $request->item_name;
      $books->item_number = $request->item_number;
