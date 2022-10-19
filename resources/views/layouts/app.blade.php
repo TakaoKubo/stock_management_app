@@ -21,23 +21,22 @@
   <div id="head_logo">
     <a href="/"><img src="img/head_logo.gif" alt="head_logo" width="195" height="30" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
     <!-- ▼▼ロゴテキストここから▼▼　-->
-    <h3>We deliver a useful item <br />
-    for your beautiful skin caring. </h3>
+    <h3>We deliver a beautiful book <br />
+    for your good reading life. </h3>
     <!-- ▲▲ロゴテキストここまで▲▲　-->
   </div>
 
   <div id="head_right">
     <!-- ▼▼キャッチ＆案内テキストここから▼▼　-->
-    <h1>貴女の美肌を守ります</h1>
+    <h1>お望みの御本を紹介いたします</h1>
     <h2>Tel.03-1234-5678｜営業時間 月-金　9:00-7:30</h2>
     <!-- ▲▲キャッチ＆案内テキストここまで▲▲　-->
 
     <!-- ▼▼メニュー項目ここから▼▼　-->
     <div id="menubar">
       <a href="/">ホーム</a>
-      <a href="product.html">商品案内</a>
-      <a href="list.html">商品一覧</a>
-      <a href="company.html">会社案内</a>
+      <a href="management">従業員向けサイト</a>
+
         <div class="clear_both"></div>
       <!-- ▲▲メニュー項目ここまで▲▲　-->
     </div>
