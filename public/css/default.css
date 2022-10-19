@@ -68,7 +68,7 @@ a:hover {
 	}
 	
 #header {
-	background:url(../img/header_bg.gif) no-repeat;
+	/* background:url(/img/header_bg.gif) no-repeat; */
 	border-bottom: 3px solid #6c5a44;
 	height: 160px;
 	text-align:left;
@@ -142,7 +142,7 @@ a:hover {
 	}
 	
 #menubar a {
-	background: url(../img/menu_btn_bg.gif) no-repeat;
+	background: url(../../../img/menu_btn_bg.gif) no-repeat;
 	display: block;
 	float: left;
 	height: 21px;
@@ -280,6 +280,7 @@ a:hover {
 	width:fit-content;
 	block-size:fit-content;
 	font-size:10px
+	opacity: 20%
 	-webkit-transform:scale(0.6) translate(-24px, -8px);
 	-moz-transform:scale(0.6) translate(-24px, -8px);
 	-ms-transform:scale(0.6) translate(-24px, -8px);

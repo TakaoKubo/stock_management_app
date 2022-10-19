@@ -20,7 +20,7 @@
             @endif
             <div><img src="upload/{{$book->item_img}}"></div>
             <div>{{$book->item_name}}</div>
-            <div>￥{{$book->item_amount}}</div>
+            <div>￥{{ number_format($book->item_amount) }}</div>
           </div>
         </a>
         </li>

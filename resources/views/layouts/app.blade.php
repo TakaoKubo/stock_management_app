@@ -21,7 +21,7 @@
         <!-- ============ ヘッダー =============== -->
 <div id="wrapper">
 <a name="top"></a>
-<div id="header">
+<div id="header" style="background-image: url('{{asset('img/header_bg.gif')}}');">
   <div id="head_logo">
     <a href="/"><img src="{{asset('img/head_logo.png')}}" alt="head_logo" width="195" height="60" border="0" /></a><a href="#"></a><!-- ▼▼ロゴ画像▲▲　-->
     <!-- ▼▼ロゴテキストここから▼▼　-->
