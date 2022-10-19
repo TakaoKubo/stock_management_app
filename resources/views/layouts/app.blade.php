@@ -17,7 +17,7 @@
     <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
 </head>
 <body>
-    @section('header')
+    <!-- @section('header') -->
         <!-- ============ ヘッダー =============== -->
 <div id="wrapper">
 <a name="top"></a>
@@ -46,7 +46,7 @@
   </div>
 </div><!-- ============ ヘッダー =============== -->
 
-    @section('cont_left')
+    <!-- @section('cont_left') -->
     <!-- ▼▼ナビゲーションリンクパートここから▼▼　-->
 <div id="content">
   <div id="cont_left">
@@ -83,7 +83,7 @@
 
     @yield('content')
 
-    @section('footer')
+    <!-- @section('footer') -->
     <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
     </div><!-- //wrapper -->
 
