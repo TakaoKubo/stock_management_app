@@ -17,7 +17,7 @@
 		      <div class="ichiran">
             <div><img src="upload/{{$book->item_img}}"></div>
             <div>{{$book->item_name}}</div>
-            @if($book->item_number < 101)
+            @if($book->item_number < 10)
               <div class="zaiko">残りわずか!!</div>
             @endif
             <div>￥{{$book->item_amount}}</div>
