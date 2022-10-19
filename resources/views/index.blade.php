@@ -1,11 +1,5 @@
 @extends('layouts.app')
 
-@section('header')
-@endsection
-
-@section('cont_left')
-@endsection
-
 @section('content')
 
 <div id="cont_right">
@@ -21,7 +15,7 @@
 	    @foreach($books as $book)
 	      <li><a href="/item/{{$book->id}}">
 		      <div class="ichiran">
-            <div><img class="thumbnail" src="upload/{{$book->item_img}}" width="70" height="70" style="object-fit: cover;"></div>
+            <div><img src="upload/{{$book->item_img}}"></div>
             <div>{{$book->item_name}}</div>
             <div>￥{{$book->item_amount}}</div>
           </div>
@@ -39,8 +33,3 @@
   <div class="clear_both"></div>
   
 @endsection
-
-@section('footer')
-
-@endsection
-

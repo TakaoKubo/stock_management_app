@@ -199,6 +199,12 @@ a:hover {
 	line-height: 1.3em;
 	padding: 2px 9px 10px;
 	}
+
+.ichiran img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+}
 	
 /* =============== CONTENT RIGHT ================= */
 

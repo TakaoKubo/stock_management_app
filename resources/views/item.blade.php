@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('header')
-@endsection
 
 @section('content')
 <head>
@@ -55,11 +53,4 @@
   
 </div><!-- //content -->
   
-
-
-  @section('footer')
-  <div id="footer">Copyright &copy; 2009 MAICOM STORE inc., All Rights Reserved.</div><!-- ▼▼コピーライト▲▲　-->
-    </div><!-- //wrapper -->
-  @endsection
-
 @endsection

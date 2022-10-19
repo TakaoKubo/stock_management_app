@@ -81,8 +81,8 @@ public function destroy(Book $book){
         $filename = "";
     }
 
-    //Eloquentモデル（登録処理）
-    $books = new Book;
+    //Eloquentモデル（更新処理）
+    $books = Book::find($request->id);
     $books->item_name = $request->item_name;
     $books->item_number = $request->item_number;
     $books->item_amount = $request->item_amount;
@@ -129,7 +129,7 @@ public function destroy(Book $book){
      }
 
      //Eloquentモデル（更新処理）
-     $books = Book::find($request->id);
+     $books = new Book;
      $books->item_name = $request->item_name;
      $books->item_number = $request->item_number;
      $books->item_amount = $request->item_amount;
