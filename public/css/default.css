@@ -270,6 +270,21 @@ a:hover {
 	float: right;
 	width: 270px;
 	}
+
+.zaiko {
+	color:white;
+	padding: 3px;
+	margin-bottom:-15px;
+	background-color:red;
+	width:fit-content;
+	block-size:fit-content;
+	font-size:10px
+	-webkit-transform:scale(0.5) translate(-35px, -15px);
+	-moz-transform:scale(0.5) translate(-35px, -15px);
+	-ms-transform:scale(0.5) translate(-35px, -15px);
+	-o-transform:scale(0.5) translate(-35px, -15px);
+	transform:scale(0.5) translate(-35px, -15px);
+}
 	
 /* =============== PRODUCT ================= */
 
