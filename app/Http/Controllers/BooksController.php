@@ -56,7 +56,6 @@ public function destroy(Book $book){
       $validator = Validator::make($request->all(),[
         'id' => 'required',
         'item_name'=>'required|max:255',
-        'item_name' => 'required|max:255',
         'item_number' => 'required|max:255',
         'item_amount' => 'required|max:255',
         'writer' => 'required|max:255',
@@ -104,7 +103,6 @@ public function destroy(Book $book){
      $validator = Validator::make($request->all(),[
         'id' => 'required',
         'item_name'=>'required|max:255',
-        'item_name' => 'required|max:255',
         'item_number' => 'required|max:255',
         'item_amount' => 'required|max:255',
         'writer' => 'required|max:255',

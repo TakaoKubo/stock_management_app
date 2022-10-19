@@ -78,6 +78,14 @@
       </div>
       <!--/published-->
 
+      <!-- file追加 -->
+      <div class="form-group">
+      <label for="file">画像</label>
+      <input type="file" name="item_img"class="form-control"
+      value="{{$book->file}}">
+      </div>
+      <!-- file追加 -->
+
       <!--saveボタン/Backボタン-->
       <div class="well well-sm">
       <button type="submit"class="btn btn-primary">save</button>
