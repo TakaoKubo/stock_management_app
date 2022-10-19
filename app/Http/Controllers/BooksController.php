@@ -102,7 +102,7 @@ public function destroy(Book $book){
  {
      //バリデーション
      $validator = Validator::make($request->all(),[
-        'id' => 'required',
+        // 'id' => 'required',
         'item_name'=>'required|max:255',
         'item_name' => 'required|max:255',
         'item_number' => 'required|max:255',
