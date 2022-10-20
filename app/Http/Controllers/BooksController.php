@@ -76,7 +76,7 @@ public function destroy(Book $book){
     $file = $request->file('item_img'); //file取得
     if(!empty($file)){                  //fileが空かチェック
         $filename = $file->getClientOriginalName();
-        $move = $file->move('../upload/',$filename);
+        $move = $file->move('./upload/',$filename);
     } else {
         $filename = "";
     }
@@ -92,6 +92,7 @@ public function destroy(Book $book){
     $books->genre = $request->genre;
     $books->synopsis = $request->synopsis;
     $books->item_img = $filename;
+    
     $books->published = $request->published;
     $books->save();
     return redirect('/management');

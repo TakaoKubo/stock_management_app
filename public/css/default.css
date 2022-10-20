@@ -9,6 +9,7 @@ body {
 	font-size: 12px;
 	margin: 0 auto;
 	text-align: center;
+	scroll-behavior: smooth;
 	}
 	
 p {
