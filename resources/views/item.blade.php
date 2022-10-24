@@ -1,6 +1,6 @@
 @include("parts.common")
 @include("parts.header")
-@include("parts.nav")
 @include("parts.item.section01")
-@include("parts.topNav")
+@include("parts.item.section02")
+@include("parts.item.section03")
 @include("parts.footer")
