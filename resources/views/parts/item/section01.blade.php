@@ -1,17 +1,12 @@
 <section class="module">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 mb-sm-40"><a class="gallery" href="assets/images/shop/product-7.jpg"><img src="assets/images/shop/product-7.jpg" alt="Single Product Image"/></a>
-                <ul class="product-gallery">
-                  <li><a class="gallery" href="assets/images/shop/product-8.jpg"></a><img src="assets/images/shop/product-8.jpg" alt="Single Product"/></li>
-                  <li><a class="gallery" href="assets/images/shop/product-9.jpg"></a><img src="assets/images/shop/product-9.jpg" alt="Single Product"/></li>
-                  <li><a class="gallery" href="assets/images/shop/product-10.jpg"></a><img src="assets/images/shop/product-10.jpg" alt="Single Product"/></li>
-                </ul>
+              <div class="col-sm-6 mb-sm-40"><a class="gallery" href="../upload/{{$item->item_img}}"><img src="../upload/{{$item->item_img}}" alt="Image is not available yet"/></a>
               </div>
               <div class="col-sm-6">
                 <div class="row">
                   <div class="col-sm-12">
-                    <h1 class="product-title font-alt">Accessories Pack</h1>
+                    <h1 class="product-title font-alt">{{$item->item_name}}</h1>
                   </div>
                 </div>
                 <div class="row mb-20">
@@ -20,13 +15,18 @@
                 </div>
                 <div class="row mb-20">
                   <div class="col-sm-12">
-                    <div class="price font-alt"><span class="amount">£20.00</span></div>
+                    <div class="price font-alt"><span class="amount">{{$item->writer}}　著</span></div>
+                  </div>
+                </div>
+                <div class="row mb-20">
+                  <div class="col-sm-12">
+                    <div class="price font-alt"><span class="amount">{{$item->item_amount}}円</span></div>
                   </div>
                 </div>
                 <div class="row mb-20">
                   <div class="col-sm-12">
                     <div class="description">
-                      <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                      <p>{{$item->synopsis}}</p>
                     </div>
                   </div>
                 </div>
@@ -38,7 +38,13 @@
                 </div>
                 <div class="row mb-20">
                   <div class="col-sm-12">
-                    <div class="product_meta">Categories:<a href="#"> Man, </a><a href="#">Clothing, </a><a href="#">T-shirts</a>
+                    <div class="product_meta">Categories:<a href="#"> {{$item->genre}} </a>
+                    </div>
+                    <div class="product_meta">Publisher:<a href="#"> {{$item->publisher}}</a>
+                    </div>
+                    <div class="product_meta">Published:<a href="#"> {{$item->published}} </a>
+                    </div>
+                    <div class="product_meta">Total Pages:<a href="#"> {{$item->page_number}} </a>
                     </div>
                   </div>
                 </div>
