@@ -22,7 +22,9 @@ Route::get('/mycart', [BooksController::class, 'mycart'])
 ->middleware('auth')
 ;
 
-Route::post('/mycart', [BooksController::class, 'addMycart']);
+Route::post('/mycart', [BooksController::class, 'addMycart'])
+->middleware('auth')
+;
 
 Route::get('/management', [BooksController::class, 'management'])
 //->middleware('auth')

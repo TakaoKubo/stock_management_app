@@ -8,12 +8,20 @@
                <p class="text-center">{{ $message ?? '' }}</p><br>
                <div class="d-flex flex-row flex-wrap">
 
-                   @foreach($my_carts as $my_cart)
-                       <div class="mycart_box">
-                           <p>ユーザーID：{{$my_cart->user_id}}</p>
-                           <p>ストックID：{{$my_cart->stock_id}}</p>
-                       </div>
-                   @endforeach
+               @foreach($my_carts as $my_cart)
+                    <div class="mycart_box">
+                        {{$my_cart->stock->item_name}} <br>                                
+                        {{ number_format($my_cart->stock->item_amount)}}円 <br>
+                            <img src="/upload/{{$my_cart->stock->item_img}}" alt="" class="incart" >
+                            <br>
+                            
+                            <form action="/cartdelete" method="post">
+                                @csrf
+                                <input type="hidden" name="stock_id" value="{{ $my_cart->stock->id }}">
+                                <input type="submit" value="カートから削除する">
+                            </form>
+                    </div>
+                @endforeach
 
                </div>
 
