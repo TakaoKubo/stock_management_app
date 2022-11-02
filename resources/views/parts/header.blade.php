@@ -233,7 +233,9 @@
                   <li><a href="shop_single_product.html">Single Product</a></li>
                   <li><a href="shop_checkout.html">Checkout</a></li>
                 </ul>
+                
               </li>
+              
               <!--li.dropdown.navbar-cart-->
               <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
               <!--        span.icon-basket-->

@@ -31,10 +31,15 @@
                   </div>
                 </div>
                 <div class="row mb-20">
-                  <div class="col-sm-4 mb-sm-20">
+                  <!-- <div class="col-sm-4 mb-sm-20">
                     <input class="form-control input-lg" type="number" name="" value="1" max="40" min="1" required="required"/>
-                  </div>
-                  <div class="col-sm-8"><a class="btn btn-lg btn-block btn-round btn-b" href="#">Add To Cart</a></div>
+                  </div> -->
+                  <form action="{{url('/mycart')}}" method="post">
+                    @csrf
+                    <input type="hidden" name="item_id" value="{{ $item->id }}">
+                    <input type="submit" value="カートに入れる">
+                  </form>
+                  <!-- <div class="col-sm-8"><a class="btn btn-lg btn-block btn-round btn-b" href="#">Add To Cart</a></div> -->
                 </div>
                 <div class="row mb-20">
                   <div class="col-sm-12">

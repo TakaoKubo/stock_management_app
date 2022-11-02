@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Book;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Cart;
 use Validator;
 
 class BooksController extends Controller
@@ -17,6 +19,7 @@ class BooksController extends Controller
         }else{
             $books = Book::orderBy('id', 'asc')->get();
         }
+        $books = Book::Paginate(6);
         $param = ['books'=>$books, 'sort' => $sort, 'order' => $order];
         return view('index',$param);
     }
@@ -26,6 +29,33 @@ class BooksController extends Controller
         return view('item', [
             'item'=> $item
         ]);
+    }
+
+    public function myCart()
+    {
+        $my_carts = Cart::all();
+        return view('mycart',compact('my_carts'));
+        
+    }
+
+    public function addMycart(Request $request)
+    {
+        $user_id = Auth::id(); 
+        $item_id=$request->item_id;
+ 
+        $cart_add_info=Cart::firstOrCreate(['stock_id' => $item_id,'user_id' => $user_id]);
+ 
+        if($cart_add_info->wasRecentlyCreated){
+            $message = 'カートに追加しました';
+        }
+        else{
+            $message = 'カートに登録済みです';
+        }
+ 
+        $my_carts = Cart::where('user_id',$user_id)->get();
+ 
+        return view('mycart',compact('my_carts' , 'message'));
+ 
     }
 
     public function management(){
