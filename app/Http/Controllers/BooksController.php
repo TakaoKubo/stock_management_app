@@ -31,32 +31,25 @@ class BooksController extends Controller
         ]);
     }
 
-    public function myCart()
+    public function myCart(Cart $cart)
     {
-        $my_carts = Cart::all();
+        $my_carts = $cart->showCart();
         return view('mycart',compact('my_carts'));
-        
     }
 
-    public function addMycart(Request $request)
-    {
-        $user_id = Auth::id(); 
-        $item_id=$request->item_id;
- 
-        $cart_add_info=Cart::firstOrCreate(['stock_id' => $item_id,'user_id' => $user_id]);
- 
-        if($cart_add_info->wasRecentlyCreated){
-            $message = 'カートに追加しました';
-        }
-        else{
-            $message = 'カートに登録済みです';
-        }
- 
-        $my_carts = Cart::where('user_id',$user_id)->get();
- 
-        return view('mycart',compact('my_carts' , 'message'));
- 
-    }
+    public function addMycart(Request $request,Cart $cart)
+   {
+
+       //カートに追加の処理
+       $stock_id=$request->item_id;
+       $message = $cart->addCart($stock_id);
+
+       //追加後の情報を取得
+       $my_carts = $cart->showCart();
+
+       return view('mycart',compact('my_carts' , 'message'));
+
+   }
 
     public function management(){
         $books = Book::orderBy('created_at', 'asc')->get();

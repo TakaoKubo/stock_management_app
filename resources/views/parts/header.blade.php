@@ -223,15 +223,32 @@
                 </ul>
               </li>
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Product</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="shop_product_col_3.html">3 columns</a></li>
-                      <li><a href="shop_product_col_4.html">4 columns</a></li>
-                    </ul>
+                <ul class="dropdown-menu" role="menu">    
+                  @guest            
+                  <li>
+                    <a href="{{ route('login') }}">{{ __('ログイン') }}</a>
                   </li>
-                  <li><a href="shop_single_product.html">Single Product</a></li>
-                  <li><a href="shop_checkout.html">Checkout</a></li>
+                    @if(Route::has('register'))
+                    <li>
+                      <a href="{{ route('register') }}">{{ __('会員登録') }}</a>
+                    </li>
+                    @endif
+                  @else
+                  <li>
+                  <a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                        {{ __('ログアウト') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{{ url('/mycart') }}">カートを見る</a>
+                  </li>
+                  @endguest
                 </ul>
                 
               </li>
