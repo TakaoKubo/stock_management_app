@@ -51,7 +51,6 @@ class BooksController extends Controller
 
    public function deleteCart(Request $request,Cart $cart)
    {
-
        //カートから削除の処理
        $stock_id=$request->stock_id;
        $message = $cart->deleteCart($stock_id);
@@ -60,8 +59,14 @@ class BooksController extends Controller
        $data = $cart->showCart();
 
        return view('mycart',$data)->with('message', $message);
-
    }
+
+   public function checkout(Cart $cart)
+   {
+        $checkout_items = $cart->checkoutCart();
+       return view('checkout');
+   }
+
 
     public function management(){
         $books = Book::orderBy('created_at', 'asc')->get();
