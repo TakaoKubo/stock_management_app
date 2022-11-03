@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+@include("parts.common")
+@include("parts.header")
 
-@section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -74,4 +75,5 @@
         </div>
     </div>
 </div>
-@endsection
+@include("parts.footer")
+

@@ -8,6 +8,8 @@ use App\Models\Book;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Cart;
 use Validator;
+use Illuminate\Support\Facades\Mail; //追記
+use App\Mail\Thanks;//追記
 
 class BooksController extends Controller
 {    
@@ -64,6 +66,7 @@ class BooksController extends Controller
    public function checkout(Cart $cart)
    {
         $checkout_items = $cart->checkoutCart();
+        Mail::to('test@example.com')->send(new Thanks);
        return view('checkout');
    }
 

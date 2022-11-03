@@ -30,7 +30,9 @@ Route::post('/checkout', [BooksController::class, 'checkout'])
 ->middleware('auth')
 ;
 
-Route::post('/cartdelete', [BooksController::class, 'deleteCart']);
+Route::post('/cartdelete', [BooksController::class, 'deleteCart'])
+->middleware('auth')
+;
 
 Route::get('/management', [BooksController::class, 'management'])
 //->middleware('auth')
