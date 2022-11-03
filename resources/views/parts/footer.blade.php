@@ -3,8 +3,8 @@
             <div class="row">
               <div class="col-sm-3">
                 <div class="widget">
-                  <h5 class="widget-title font-alt">About Titan</h5>
-                  <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                  <h5 class="widget-title font-alt">About MISSING BOOKSHOP</h5>
+                  <p>A capacity, and taste, for reading gives access to whatever has already been discovered by others.</p>
                   <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10
                   <p>Email:<a href="#">somecompany@example.com</a></p>
                 </div>
@@ -40,14 +40,14 @@
                     <li class="clearfix">
                       <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials Book</a></div>
                         <div class="widget-posts-meta">23 january</div>
                       </div>
                     </li>
                     <li class="clearfix">
                       <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                        <div class="widget-posts-title"><a href="#">Realistic Business Card Book</a></div>
                         <div class="widget-posts-meta">15 February</div>
                       </div>
                     </li>
