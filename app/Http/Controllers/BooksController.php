@@ -65,8 +65,10 @@ class BooksController extends Controller
 
    public function checkout(Cart $cart)
    {
-        $checkout_items = $cart->checkoutCart();
-        Mail::to('test@example.com')->send(new Thanks);
+        $user = Auth::user();
+        $mail_data['user']=$user->name; 
+        $mail_data['checkout_items']=$cart->checkoutCart(); 
+        Mail::to($user->email)->send(new Thanks($mail_data));//編集
        return view('checkout');
    }
 

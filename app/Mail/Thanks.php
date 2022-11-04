@@ -18,10 +18,21 @@ class Thanks extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($mail_data)
     {
-        //
+        $this->mail_data = $mail_data;
     }
+
+       /**
+    * Build the message.
+    *
+    * @return $this
+    */
+   public function build()
+   {
+       return $this->markdown('mails.thanks',$this->mail_data)
+                   ->subject('Missing BookShopでのご購入ありがとうございます');
+   }
 
     /**
      * Get the message envelope.
