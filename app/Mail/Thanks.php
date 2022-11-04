@@ -28,32 +28,32 @@ class Thanks extends Mailable
      *
      * @return \Illuminate\Mail\Mailables\Envelope
      */
-    public function envelope()
-    {
-        return new Envelope(
-            subject: 'Thanks',
-        );
-    }
+    // public function envelope()
+    // {
+    //     return new Envelope(
+    //         subject: 'Thanks',
+    //     );
+    // }
 
     /**
      * Get the message content definition.
      *
      * @return \Illuminate\Mail\Mailables\Content
      */
-    public function content()
-    {
-        return new Content(
-            markdown: 'mails.thanks',
-        );
-    }
+    // public function content()
+    // {
+    //     return new Content(
+    //         markdown: 'mails.thanks',
+    //     );
+    // }
 
     /**
      * Get the attachments for the message.
      *
      * @return array
      */
-    public function attachments()
-    {
-        return [];
-    }
+    // public function attachments()
+    // {
+    //     return [];
+    // }
 }
