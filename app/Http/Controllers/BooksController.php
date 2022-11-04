@@ -107,7 +107,7 @@ public function destroy(Book $book){
         'page_number' => 'required|max:255',
         'publisher' => 'required|max:255',
         'genre' => 'required|max:255',
-        'synopsis' => 'required|max:255',
+        'synopsis' => 'required|max:1000',
         'published' => 'required',
     ]);
 

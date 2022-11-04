@@ -11,8 +11,9 @@
                 </div>
               </div>
               @endforeach
-              {{$books->links()}}
+              
             </div>
+            {{$books->links()}}
           </div>
         </section>
 
