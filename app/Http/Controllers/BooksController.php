@@ -21,7 +21,7 @@ class BooksController extends Controller
         }else{
             $books = Book::orderBy('id', 'asc')->get();
         }
-        $books = Book::Paginate(6);
+        $books = Book::simplePaginate(3);
         $param = ['books'=>$books, 'sort' => $sort, 'order' => $order];
         return view('index',$param);
     }
