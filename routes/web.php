@@ -34,19 +34,19 @@ Route::post('/cartdelete', [BooksController::class, 'deleteCart'])
 ->middleware('auth')
 ;
 
-Route::get('/management', [BooksController::class, 'management'])
-// ->middleware('auth:admin')
+Route::get('/admin/management', [BooksController::class, 'management'])
+->middleware('auth:admin')
 ;
 
-Route::get('/item/{id}',[BooksController::class, 'item']);
+Route::get('/admin/item/{id}',[BooksController::class, 'item']);
 
-Route::post('/books',[BooksController::class, 'store']);
+Route::post('/admin/books',[BooksController::class, 'store']);
 
-Route::post('/booksedit/{books}', [BooksController::class, 'edit']);
+Route::post('/admin/booksedit/{books}', [BooksController::class, 'edit']);
 
-Route::delete('/book/{book}', [BooksController::class, 'destroy']);
+Route::delete('/admin/book/{book}', [BooksController::class, 'destroy']);
 
-Route::post('/books/update',[BooksController::class,'update']);
+Route::post('/admin/books/update',[BooksController::class,'update']);
 
 Auth::routes();
 

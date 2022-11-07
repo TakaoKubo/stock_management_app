@@ -92,7 +92,7 @@ public function edit(Book $books){
 //削除処理
 public function destroy(Book $book){
     $book->delete();
-    return redirect('/management');
+    return redirect('admin/management');
 }
 
  //更新
@@ -113,7 +113,7 @@ public function destroy(Book $book){
 
     //バリデーションエラー
     if($validator->fails()){
-        return redirect('/management')
+        return redirect('admin/management')
             ->withInput()
             ->withErrors($validator);
     }
@@ -140,7 +140,7 @@ public function destroy(Book $book){
     
     $books->published = $request->published;
     $books->save();
-    return redirect('/management');
+    return redirect('admin/management');
  }   
 
  public function store(Request $request)
@@ -162,7 +162,7 @@ public function destroy(Book $book){
 
      //バリデーションエラー
      if($validator->fails()){
-         return redirect('/management')
+         return redirect('admin/management')
              ->withInput()
              ->withErrors($validator);
      }
@@ -188,6 +188,6 @@ public function destroy(Book $book){
      $books->item_img = $filename;
      $books->published = $request->published;
      $books->save();
-     return redirect('/management');
+     return redirect('admin/management');
  }
 }
