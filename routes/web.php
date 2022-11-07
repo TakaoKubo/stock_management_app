@@ -35,7 +35,7 @@ Route::post('/cartdelete', [BooksController::class, 'deleteCart'])
 ;
 
 Route::get('/management', [BooksController::class, 'management'])
-//->middleware('auth')
+->middleware('auth:admin')
 ;
 
 Route::get('/item/{id}',[BooksController::class, 'item']);
@@ -50,6 +50,12 @@ Route::post('/books/update',[BooksController::class,'update']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::view('/admin/login', 'admin/login');
+Route::post('/admin/login', [App\Http\Controllers\admin\LoginController::class, 'login']);
+Route::view('/admin/register', 'admin/register');
+Route::post('/admin/register', [App\Http\Controllers\admin\RegisterController::class, 'register']);
+Route::view('/admin/home', 'admin/home')->middleware('auth:admin');
