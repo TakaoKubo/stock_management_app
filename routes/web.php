@@ -35,7 +35,7 @@ Route::post('/cartdelete', [BooksController::class, 'deleteCart'])
 ;
 
 Route::get('/management', [BooksController::class, 'management'])
-->middleware('auth:admin')
+// ->middleware('auth:admin')
 ;
 
 Route::get('/item/{id}',[BooksController::class, 'item']);
