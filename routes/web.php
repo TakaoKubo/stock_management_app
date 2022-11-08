@@ -34,11 +34,11 @@ Route::post('/cartdelete', [BooksController::class, 'deleteCart'])
 ->middleware('auth')
 ;
 
-Route::get('/admin/management', [BooksController::class, 'management'])
+Route::get('admin/management', [BooksController::class, 'management'])
 ->middleware('auth:admin')
 ;
 
-Route::get('/admin/item/{id}',[BooksController::class, 'item']);
+Route::get('/item/{id}',[BooksController::class, 'item']);
 
 Route::post('/admin/books',[BooksController::class, 'store']);
 
