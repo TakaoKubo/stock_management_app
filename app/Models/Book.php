@@ -11,4 +11,10 @@ class Book extends Model
     protected $guarded = [
         'id'
     ];
+
+    public function reviews() { 
+
+        return $this->hasMany(\App\ProductReview::class, 'product_id', 'id');
+
+    }
 }
