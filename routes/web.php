@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Book;
 use Illuminate\Http\Request;
 use App\Http\Controllers\BooksController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,16 @@ Route::post('/admin/booksedit/{books}', [BooksController::class, 'edit']);
 Route::delete('/admin/book/{book}', [BooksController::class, 'destroy']);
 
 Route::post('/admin/books/update',[BooksController::class,'update']);
+
+
+
+Route::get('product',[ProductController::class,'index']);
+
+Route::get('product/list',[ProductController::class,'list']);
+
+Route::post('product/review',[ProductController::class,'review']);
+
+
 
 Auth::routes();
 

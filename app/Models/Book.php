@@ -14,7 +14,7 @@ class Book extends Model
 
     public function reviews() { 
 
-        return $this->hasMany(\App\ProductReview::class, 'product_id', 'id');
+        return $this->hasMany(\App\Models\ProductReview::class, 'product_id', 'id');
 
     }
 }

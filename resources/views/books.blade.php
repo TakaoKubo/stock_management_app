@@ -146,12 +146,12 @@
                                     {{ $book->published }} 
                                 </td>
                                 <td>
-                                    <div><img src="upload/{{$book->item_img}}" width="100" alt="画像がありません"></div>
+                                    <div><img src="../upload/{{$book->item_img}}" width="100" alt="画像がありません"></div>
                                 </td>
 
                                 <!-- 本: 更新ボタン -->
                                 <td>
-                                    <form action="{{ url('booksedit/'.$book->id) }}" method="POST">
+                                    <form action="{{ url('/admin/booksedit/'.$book->id) }}" method="POST">
                                         @csrf
                                         <button type="submit" class="btn btn-primary">
                                             更新
@@ -161,7 +161,7 @@
 
                                 <!-- 本: 削除ボタン -->
                                 <td>
-                                    <form action="{{ url('book/'.$book->id) }}" method="POST">
+                                    <form action="{{ url('/admin/book/'.$book->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
 

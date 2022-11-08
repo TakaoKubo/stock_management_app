@@ -4,7 +4,7 @@
 <div class="row container">
   <div class="col-md-12">
     @include('common.errors')
-    <form enctype="multipart/form-data" action="{{url('books/update')}}"method="POST">
+    <form enctype="multipart/form-data" action="{{url('/admin/books/update')}}"method="POST">
 
       <!--item_name-->
       <div class="form-group">
@@ -89,7 +89,7 @@
       <!--saveボタン/Backボタン-->
       <div class="well well-sm">
       <button type="submit"class="btn btn-primary">save</button>
-      <a class="btn btn-link pull-right"href="{{url('/')}}">back</a>
+      <a class="btn btn-link pull-right"href="{{url('/admin/management')}}">back</a>
       </div>
       <!--/saveボタン/Backボタン-->
 
