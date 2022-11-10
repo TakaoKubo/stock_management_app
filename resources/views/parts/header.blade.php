@@ -249,6 +249,7 @@
                     <a class="dropdown-item" href="{{ url('/mycart') }}">カートを見る</a>
                   </li>
                   @endguest
+                  <li><a href="{{ url('/product') }}">商品レビュー</a></li>
                 </ul>
                 
               </li>

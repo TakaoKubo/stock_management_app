@@ -61,9 +61,10 @@
                     <button type="button" class="btn btn-link mr-2" data-dismiss="modal">閉じる</button>
                     <button type="button" class="btn btn-warning" @click="onSubmit">登録する</button>
                 </div>
+                
             </div>
         </div>
-    </div>
+    </div><a href="/">商品一覧へ</a>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
